@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.function.Function;
 
@@ -11,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\n###########################################\nCS3310 Project #1\nTannaz Damavandi\nby Maximum Wilder-Smith");
 
-        task2();
+        task3();
 
     }
 
@@ -34,8 +35,14 @@ public class Main {
 
     private static void task3(){
         System.out.println("\n###########################################\nTask #3 - Matrix Multiplication\n");
-        Hanoi tower = new Hanoi(4);
-        tower.start();
+        Matrix mat = new Matrix(4);
+        mat.generateSequentialValues();
+        Matrix mat2 = new Matrix(4);
+        mat2.generateSequentialValues();
+        mat.print();
+
+        mat2.print();
+        Matrix.classicMultiplication(mat,mat2);
     }
 
 

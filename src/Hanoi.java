@@ -6,7 +6,7 @@ public class Hanoi{
         this.size = size;
         towers = new int[3][size];
         for(int i=1;i<=size;i++)
-            towers[0][i-1]=i;
+            towers[0][i-1]=size-i+1;
         print();
     }
 
